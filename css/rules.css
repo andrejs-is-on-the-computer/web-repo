@@ -8,6 +8,13 @@ html, body {
   max-width: 44rem;
 }
 
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 60%;
+}
+
 h1 {
   margin-bottom: 3rem;
   font-family: Montserrat;
@@ -248,4 +255,30 @@ input[type="submit"]:hover {
     flex: 100%;
     max-width: 100%;
   }
+}
+
+.parallax {
+  background-image: url("../images/business.jpg");
+
+  /* Full height */
+  height: 500px;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.parallaxes {
+  background-image: url("../images/team.jpg");
+
+  /* Full height */
+  height: 500px;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }

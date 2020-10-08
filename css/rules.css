@@ -257,15 +257,28 @@ input[type="submit"]:hover {
   }
 }
 
- .parallax {
+.parallax {
   background-image: url("../images/business.jpg");
 
-    /* Full height */
-    height: 500px;
+  /* Full height */
+  height: 500px;
 
-    /* Create the parallax scrolling effect */
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.parallaxes {
+  background-image: url("../images/team.jpg");
+
+  /* Full height */
+  height: 500px;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }

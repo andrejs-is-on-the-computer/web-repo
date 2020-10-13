@@ -268,6 +268,9 @@ input[type="submit"]:hover {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  clip-path: polygon(50% 100%, 90% 50%, 90% 0, 10% 0, 10% 50%);
+
+
 }
 
 .parallaxes {
@@ -281,4 +284,17 @@ input[type="submit"]:hover {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+.parallax-window {
+    min-height: 400px;
+    background: transparent;
+}
+
+#logo_landing {
+  height: auto;
+  width: 50%;
+  position: relative;
+  bottom: -100;
+  text-shadow: -1px 2px 3px rgba(150, 150, 150, 1);
 }

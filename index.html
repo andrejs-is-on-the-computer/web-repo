@@ -1,6 +1,6 @@
 <script src="javascript/index.js"></script>
 <script src="javascript/javascript.js"></script>
-<script src="javascript/jquery.paroller.min.js"></script>
+<script src="javascript/parallax.min.js"></script>
 <script src="bootstrap-3.4.1-dist/js/bootstrap.min.js"></script>
 
 <link rel="stylesheet" href="bootstrap-3.4.1-dist/css/bootstrap.min.css">
@@ -42,10 +42,12 @@
     </div>
   </nav>
   <body>
-
+    <!--  -->
+    <!-- <div class="parallax-window" data-parallax="scroll" data-image-src="../images/business.jpg" style="height: 600px;"></div> -->
+    <!-- <img class="img-responsive parallax-window" data-parallax="scroll" src="images/business.jpg" style="height: 600px;"> -->
     <div class="parallax" style="height: 600px;">
 
-      <img class="img-responsive center" src="images/Narateam_logo_1.png" style="height: auto; width: 50%; position: relative; bottom: -450;">
+      <img id="logo_landing" class="img-responsive center" src="images/Narateam_logo_1.png" style="">
 
     </div>
 
@@ -130,15 +132,6 @@
       </div>
 
     <script>
-      // initialize paroller.js and set attributes for selected elements
-      // $('.jumbotron').paroller();
-      //  $(".jumbotron, [data-paroller-factor]").paroller({
-      //       factor: 0.1,            // multiplier for scrolling speed and offset
-      //       factorXs: 0.1,           // multiplier for scrolling speed and offset
-      //       type: 'background',     // background, foreground
-      //       direction: 'vertical', // vertical, horizontal
-      //       transition: 'transform 0.2s ease-in' // CSS transition
-      //   });
     </script>
   </body>
 </html>

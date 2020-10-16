@@ -3,10 +3,14 @@ html, body {
   font-size: 10px;
 }
 
-.body {
+html {
+  overflow-anchor: none;
+}
+
+/* .body {
   margin: 0 auto 4rem;
   max-width: 44rem;
-}
+} */
 
 .center {
   display: block;

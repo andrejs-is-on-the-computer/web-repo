@@ -56,42 +56,22 @@
         <a class="nav-link disabled" href="#">Disabled</a>
       </li>
     </ul>
-    <form class="form-inline my-2 my-lg-0">
-      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-    </form>
+    <!-- <form class="form-inline my-2 my-lg-0"> -->
+      <!-- <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search"> -->
+      <button class="btn btn-danger my-2 my-sm-0" type="submit">BOOK SESSION</button>
+    <!-- </form> -->
   </div>
 </nav>
-  <!-- <nav class="navbar navbar-inverse">
-    <div class="container-fluid">
-      <div class="navbar-header">
-        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </button>
-        <a class="navbar-brand" href="#"><img class="img-responsive" src="images/Narateam_logo_1.png" style="height: 100%;"></a>
-      </div>
-      <div class="collapse navbar-collapse" id="myNavbar">
-        <ul class="nav navbar-nav">
-          <li class="active"><a href="#">Home</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Book Online</a></li>
-          <li><a href="#">Contact</a></li>
-        </ul>
-        <ul class="nav navbar-nav navbar-right">
-          <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
-        </ul>
-      </div>
-    </div>
-  </nav> -->
   <body>
     <!--  -->
     <!-- <div class="parallax-window" data-parallax="scroll" data-image-src="../images/business.jpg" style="height: 600px;"></div> -->
     <!-- <img class="img-responsive parallax-window" data-parallax="scroll" src="images/business.jpg" style="height: 600px;"> -->
-    <div class="row content">
-    <div class="col-lg-1" id="outer_black"></div>
-    <div class="col-md-10">
+    <div class="row content" style="min-height: 100%;">
+    <div class="col-lg-1" id="die_back">
+    </div>
+    <!-- die_back -->
+    <!-- outer_black -->
+    <div class="col-lg-10">
     <div class="parallax" style="height: 600px;">
       <img id="logo_landing" class="img-responsive center" src="images/Narateam_logo_1.png" style="">
     </div>
@@ -175,9 +155,15 @@
         </div>
         </div>
       </div>
-      <div class="col-lg-1" id="outer_black"></div>
+      <div class="col-lg-1 min-vh-200" id="die_back">
+
+      </div>
       </div>
     <script>
+      var _docHeight = (document.height !== undefined) ? document.height : document.body.offsetHeight;
+      var height = document.html.height;
+      console.log(height);
+      console.log(_docHeight);
     </script>
   </body>
 </html>

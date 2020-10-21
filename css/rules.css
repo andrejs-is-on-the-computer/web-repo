@@ -326,3 +326,23 @@ input[type="submit"]:hover {
   height: 100%;
   overflow: auto;
 } */
+
+#info_button {
+  position:  relative;
+  float: left;
+  /* left: 10%; */
+  bottom: 10%;
+}
+
+.img-fluid {
+  max-width: 100%;
+  height: auto
+}
+
+#big-break {
+  margin-top: 150px;
+}
+
+#resized {
+
+}

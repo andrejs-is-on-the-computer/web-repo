@@ -270,7 +270,7 @@ input[type="submit"]:hover {
 }
 
 .parallax {
-  background-image: url("../images/business.jpg");
+  background-image: url("../images/table_wide.png");
   /* Full height */
   height: 500px;
   /* Create the parallax scrolling effect */
@@ -282,7 +282,7 @@ input[type="submit"]:hover {
 }
 
 .parallaxes {
-  background-image: url("../images/team.jpg");
+  background-image: url("../images/table_long.png");
   /* Full height */
   height: 500px;
   /* Create the parallax scrolling effect */

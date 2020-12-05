@@ -130,6 +130,7 @@ input[type="submit"]:hover {
   .navbar {
     margin-bottom: 0;
     border-radius: 0;
+    width: 100%;
   }
 
   /* Set height of the grid so .sidenav can be 100% (adjust as needed) */

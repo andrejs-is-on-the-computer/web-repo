@@ -6,6 +6,11 @@
     font-family: Montserrat, sans-serif;
 }
 
+html, body {
+    max-width: 100%;
+    /* overflow-x: hidden; */
+}
+
 body {
     background: #e9e9e9;
 }

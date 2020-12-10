@@ -1,11 +1,11 @@
 html, body {
   background: #e9e9e9;
-  font-size: 10px;
+  font-size: 15px;
 }
 
 .body {
-  margin: 0 auto 4rem;
-  max-width: 44rem;
+  min-height: 100%;
+  overflow: auto;
 }
 
 .center {
@@ -122,10 +122,11 @@ input[type="submit"]:hover {
   .navbar {
     margin-bottom: 0;
     border-radius: 0;
+    width: 100%;
   }
 
   /* Set height of the grid so .sidenav can be 100% (adjust as needed) */
-  .row.content {height: 450px}
+  /* .row.content {height: 450px} */
 
   /* Set gray background color and 100% height */
   .sidenav {
@@ -241,6 +242,10 @@ input[type="submit"]:hover {
   width: 100%;
 }
 
+.col-lg-10 {
+  background: #e9e9e9;
+}
+
 /* Responsive layout - makes a two column-layout instead of four columns */
 @media screen and (max-width: 800px) {
   .column {
@@ -258,11 +263,21 @@ input[type="submit"]:hover {
 }
 
 .parallax {
-  background-image: url("../images/business.jpg");
-
+  background-image: url("../images/table_wide.png");
   /* Full height */
   height: 500px;
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  clip-path: polygon(50% 100%, 100% 70%, 100% 0, 0 0, 0 70%);
+}
 
+.parallaxes {
+  background-image: url("../images/table_long.png");
+  /* Full height */
+  height: 500px;
   /* Create the parallax scrolling effect */
   background-attachment: fixed;
   background-position: center;
@@ -270,15 +285,100 @@ input[type="submit"]:hover {
   background-size: cover;
 }
 
-.parallaxes {
-  background-image: url("../images/team.jpg");
+.parallax-window {
+    min-height: 400px;
+    background: transparent;
+}
 
-  /* Full height */
-  height: 500px;
-
-  /* Create the parallax scrolling effect */
+/* #die_back {
+  position: absolute;
+  background-image: url("../images/die.png");
   background-attachment: fixed;
   background-position: center;
-  background-repeat: no-repeat;
+  background-repeat: repeat;
   background-size: cover;
+} */
+
+#logo_landing {
+  height: auto;
+  width: 50%;
+  /* position: relative; */
+  top: -10;
+  text-shadow: -1px 2px 3px rgba(150, 150, 150, 1);
+}
+
+/* #outer_black {
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 0;
+  min-height:100%
+  display:table-cell;
+  height: 100%;
+  position: absolute;
+  height: 100%;
+  overflow: auto;
+} */
+
+#info_button {
+  position:  relative;
+  float: bottom;
+  /* left: 10%; */
+  /* bottom: 10%; */
+}
+
+.img-fluid {
+  max-width: 100%;
+  height: auto
+}
+
+#big-break {
+  margin-top: 150px;
+}
+
+#col-grid-2 {
+  display: grid;
+
+}
+
+#text-block {
+  text-align: justify; 
+  text-justify: inter-word;
+}
+
+
+.two-column-text {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(550px, 1fr));
+  text-align: justify; 
+  text-justify: inter-word;
+}
+
+@media only screen and (max-width: 600px) {
+  .layout {
+      display: flex;
+      padding: 5px;
+  }
+  .grid-item {
+      padding: 20px;
+      width: 100%;
+  }
+  .grid-item-side {
+      display: none;
+  }
+}
+@media only screen and (min-width: 599px) {
+  .layout {
+      display: grid;
+      grid-template-columns: 10% 80% 10%;
+      padding: 5px;
+  }
+  .grid-item {
+      padding: 20px;
+  }
+  .grid-item-side {
+      padding: 20px;
+      text-align: center;
+  }
 }

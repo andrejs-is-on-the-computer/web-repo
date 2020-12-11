@@ -126,13 +126,33 @@
 
       <div class="col-lg-3"></div>
       <div class="col-lg-6" style="margin-left: auto; margin-right: auto;">
-        <form>
-          <input type="text" placeholder="Your Name" /><br />
-          <input type="text" placeholder="Your Phone or Email" /><br />
+        <form method="post" action="send_mail.php">
+          <input type="text" name="first_name" required placeholder="Your Name" required/><br />
+          <input type="email" name="email_address" placeholder="Your Phone or Email" required/><br />
+          <textarea name="comments" maxlength="500"></textarea>
           <input type="submit" value="Send" />
         </form>
       </div>
       <div class="col-lg-3"></div>
+
+      <!-- <form method="post" action="send_mail.php">
+        <p>
+        <label>First Name
+        <input type="text" name="first_name" required>
+        </label> 
+        </p>
+        <p>
+        <label>Email 
+        <input type="email" name="email_address">
+        </label>
+        </p>
+        <p>
+        <label>Comments
+        <textarea name="comments" maxlength="500"></textarea>
+        </label>
+        </p>
+        <p><button>Submit the form</button></p>
+        </form> -->
 
 
   </section>
